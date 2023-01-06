@@ -1,0 +1,8 @@
+/browser.cjs
+/browser.mjs
+/enonic-explorer-utils-v*.tgz
+/index.cjs
+/index.d.ts
+/index.mjs
+/node_modules/
+/yarn-error.log
