@@ -168,3 +168,10 @@ export const DEFAULT_INTERFACE_FIELDS = [{
 	name: '_alltext',
 	boost: 1
 }];
+
+//──────────────────────────────────────────────────────────────────────────────
+// HTTP Headers
+//──────────────────────────────────────────────────────────────────────────────
+export enum HTTP_HEADERS {
+	EXPLORER_INTERFACE_NAME = 'Explorer-Interface-Name'
+}

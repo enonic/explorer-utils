@@ -10,6 +10,7 @@ export {
     FieldPath,
     Folder,
     FOLDERS,
+    HTTP_HEADERS,
     NodeType,
     Path,
     PERMISSION_SYSTEM_ADMIN,
