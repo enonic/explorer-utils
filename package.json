@@ -19,9 +19,12 @@
     "typescript": "^4.9.4"
   },
   "exports": {
-    "types": "./index.d.ts",
-    "import": "./index.mjs",
-    "require": "./index.cjs"
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    },
+    "./src": "./src/index.ts"
   },
   "files": [
     "/src",
