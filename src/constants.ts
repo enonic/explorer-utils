@@ -173,5 +173,5 @@ export const DEFAULT_INTERFACE_FIELDS = [{
 // HTTP Headers
 //──────────────────────────────────────────────────────────────────────────────
 export enum HTTP_HEADERS {
-	EXPLORER_INTERFACE_NAME = 'Explorer-Interface-Name'
+	EXPLORER_INTERFACE_NAME = 'explorer-interface-name'
 }
