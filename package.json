@@ -7,10 +7,12 @@
   "bugs": {
     "url": "https://github.com/enonic/explorer-utils/issues"
   },
+  "dependencies": {
+    "@enonic/js-utils": "^1.1.0"
+  },
   "description": "constants and functions that can be used both client- and server-side.",
   "devDependencies": {
     "@enonic-types/lib-node": "^7",
-    "@enonic/js-utils": "^1.1.0",
     "@swc/core": "^1",
     "npm-run-all": "^4",
     "rimraf": "^5",
@@ -70,5 +72,5 @@
   },
   "type": "module",
   "types": "index.d.mts",
-  "version": "0.1.1"
+  "version": "0.1.2"
 }
