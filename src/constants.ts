@@ -78,6 +78,7 @@ export const NodeType = {
 // Roles
 //──────────────────────────────────────────────────────────────────────────────
 export const Role = {
+	EXPLORER_ADMIN: `${APP_EXPLORER}.admin` as const,
 	EXPLORER_READ: `${APP_EXPLORER}.read` as const,
 	EXPLORER_WRITE: `${APP_EXPLORER}.write` as const,
 	SYSTEM_ADMIN: 'system.admin' as const,
@@ -88,6 +89,7 @@ export const Role = {
 // Principals
 //──────────────────────────────────────────────────────────────────────────────
 export const Principal = {
+	// EXPLORER_ADMIN: `role:${Role.EXPLORER_ADMIN}` as const, // Not used anywhere yet?
 	EXPLORER_READ: `role:${Role.EXPLORER_READ}` as const,
 	EXPLORER_WRITE: `role:${Role.EXPLORER_WRITE}` as const,
 	EVERYONE: `role:${Role.SYSTEM_EVERYONE}` as const,
@@ -162,8 +164,6 @@ export const EVENT_LISTEN_TYPE_CUSTOM_EXPLORER_DOCUMENTTYPE_UPDATED = `${EVENT_T
 //──────────────────────────────────────────────────────────────────────────────
 // Default values
 //──────────────────────────────────────────────────────────────────────────────
-
-// NOTE: This constant is duplicated in app-explorer/src/main/resources/assets/react/constants.ts
 export const DEFAULT_INTERFACE_FIELDS = [{
 	name: '_alltext',
 	boost: 1
