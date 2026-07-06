@@ -153,7 +153,7 @@ export const RootPermission = {
 	} as AccessControlEntry
 } as const;
 
-export const ROOT_PERMISSIONS_EXPLORER = Object.keys(RootPermission).map(k=>RootPermission[k]);
+export const ROOT_PERMISSIONS_EXPLORER = Object.values(RootPermission);
 
 //──────────────────────────────────────────────────────────────────────────────
 // Events
