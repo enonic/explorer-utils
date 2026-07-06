@@ -153,7 +153,9 @@ export const RootPermission = {
 	} as AccessControlEntry
 } as const;
 
-export const ROOT_PERMISSIONS_EXPLORER = Object.values(RootPermission);
+// Object.values is not ES5, and this module is bundled into XP server-side
+// (Nashorn) code, so use Object.keys().map() instead.
+export const ROOT_PERMISSIONS_EXPLORER = Object.keys(RootPermission).map(k=>RootPermission[k]);
 
 //──────────────────────────────────────────────────────────────────────────────
 // Events

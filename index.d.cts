@@ -67,7 +67,7 @@ declare const RootPermission: {
     readonly EXPLORER_WRITE: AccessControlEntry;
     readonly SYSTEM_ADMIN: AccessControlEntry;
 };
-declare const ROOT_PERMISSIONS_EXPLORER: AccessControlEntry[];
+declare const ROOT_PERMISSIONS_EXPLORER: any[];
 declare const EVENT_TYPE_PREFIX_CUSTOM = "custom";
 declare const EVENT_SEND_TYPE_CUSTOM_EXPLORER_DOCUMENTTYPE_CREATED = "explorer.documentType.created";
 declare const EVENT_SEND_TYPE_CUSTOM_EXPLORER_DOCUMENTTYPE_UPDATED = "explorer.documentType.updated";
