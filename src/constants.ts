@@ -152,10 +152,12 @@ export const RootPermission = {
 		deny: []
 	} as AccessControlEntry
 } as const;
+type RootPermissionKey = keyof typeof RootPermission;
 
 // Object.values is not ES5, and this module is bundled into XP server-side
 // (Nashorn) code, so use Object.keys().map() instead.
-export const ROOT_PERMISSIONS_EXPLORER = Object.keys(RootPermission).map(k=>RootPermission[k]);
+export const ROOT_PERMISSIONS_EXPLORER = (Object.keys(RootPermission) as RootPermissionKey[])
+	.map(k => RootPermission[k] as AccessControlEntry);
 
 //──────────────────────────────────────────────────────────────────────────────
 // Events
